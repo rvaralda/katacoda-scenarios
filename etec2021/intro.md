@@ -8,8 +8,16 @@
 
 
 # Katacoda
+
+## Ubuntu playgound
 https://katacoda.com/courses/ubuntu/playground2004
+
+## Cenário no katacoda
+https://katacoda.com/rogerio/scenarios/etec2021
+
+
 
 # Obter e instalar o docker
 
 https://docs.docker.com/get-docker/
+
