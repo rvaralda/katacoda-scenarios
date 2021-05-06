@@ -1,26 +1,42 @@
-# Rodando Elasticsearch no docker
+# Rodando seu primeiro container no docker
 
-## Execute o seguinte comando: 
+## Execute o seguinte comando:
 
-`docker run --name elasticsearch -d --rm -e "discovery.type=single-node" -p 9200:9200 -p 9300:9300 elasticsearch:7.12.0`{{execute}}
+`docker run --name webserver -d --rm -p 80:80 nginx`{{execute}}
 
 ### Verifique o container rodando 
 
-`docker ps`
+`docker ps`{{execute}}
 
-## Testando no terminal
+### Verifique as imagens dos containers
 
-Abra um novo terminal clicando em "+" e "Open New Terminal"
+`docker images`{{execute}}
 
-E rode o seguinte comando:
 
-`curl localhost:9200`{{execute}}
+### Verificando os eventos
+`docker logs -f webserver`{{execute}}
+Use `ctrl+C` para fechar os logs
 
 
 ## Testando no navegador
 
-Clique em "+" e "Select port to view on Host 1"
+Clique em `+` e `View HTTP port 80 on Host 1`
 
-Assim que abrir uma nova pagina: coloque 9200 e clique em "Display Port"
+Você deverá ver a página de status do elasticsearch
 
-Você deverá ver a pagina de status do elasticsearch
+## Testando no terminal
+
+Abra um novo terminal clicando em `+` e `Open New Terminal`
+
+E rode o seguinte comando:
+
+`curl localhost`{{execute}}
+
+
+### Removendo o container
+
+`docker rm webserver`{{execute}}
+
+ou
+
+`docker rm -f webserver`{{execute}}

@@ -2,7 +2,7 @@
   "title": "etec2021",
   "description": "etec 2021",
   "difficulty": "Beginner",
-  "time": "60 minutes",
+  "time": "120 minutes",
   "details": {
     "steps": [
       {
@@ -26,7 +26,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "ubuntu:2004"
