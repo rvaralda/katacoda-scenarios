@@ -1,42 +1,23 @@
-# Rodando seu primeiro container no docker
+# Rodando seu primeiro container
+---
+
+![Image](https://training.play-with-docker.com/images/ops-basics-run-details.svg)
 
 ## Execute o seguinte comando:
 
-`docker run --name webserver -d --rm -p 80:80 nginx`{{execute}}
+`docker run alpine echo "olá do alpine"`{{execute}}
+
+# listar arquivos de dentro do container
+
+`docker run alpine ls -l`{{execute}}
 
 ### Verifique o container rodando 
 
 `docker ps`{{execute}}
 
+### ou para verificar os containers em segundo plano
+`docker ps -a`{{execute}}
+
 ### Verifique as imagens dos containers
 
 `docker images`{{execute}}
-
-
-### Verificando os eventos
-`docker logs -f webserver`{{execute}}
-Use `ctrl+C` para fechar os logs
-
-
-## Testando no navegador
-
-Clique em `+` e `View HTTP port 80 on Host 1`
-
-Você deverá ver a página de status do elasticsearch
-
-## Testando no terminal
-
-Abra um novo terminal clicando em `+` e `Open New Terminal`
-
-E rode o seguinte comando:
-
-`curl localhost`{{execute}}
-
-
-### Removendo o container
-
-`docker rm webserver`{{execute}}
-
-ou
-
-`docker rm -f webserver`{{execute}}
