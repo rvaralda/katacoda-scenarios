@@ -14,8 +14,8 @@
 `docker images`{{execute}}
 
 ### Verificando os eventos
-`docker logs -f elasticsearch`{{execute}}
-Use `ctrl+C` para fechar os logs
+`docker logs -f es`{{execute}}
+Use `ctrl+C` para fechar os logs.
 
 
 ## Testando no terminal
